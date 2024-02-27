@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=La+Belle+Aurore&family=League+Gothic&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.color-red {
+  color: #cc0000;
+}
+
+.btn {
+  position: relative;
+  cursor: pointer;
+  margin: 0 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: none;
+  padding: 14px 32px;
+  background: #fff;
+  color: #262626;
+  font-size: 20px;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #4a4343;
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -10px;
+  left: -10px;
+  border-top: 3px solid #cc0000;
+  border-left: 3px solid #cc0000;
+  transition: all 0.5s;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: -10px;
+  right: -10px;
+  border-bottom: 3px solid #222;
+  border-right: 3px solid #222;
+  transition: all 0.5s;
+}
+
+.btn:hover:before,
+.btn:hover:after {
+  height: 100%;
+  width: 100%;
+}
+
+.form-input {
+  width: 100%;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  background-color: #4a4343;
+  color: #fff;
+}
+
+header {
+  height: 100dvh;
+  background: url(../images/showcase.jpg) no-repeat center center/cover;
+  margin-bottom: 1rem;
+}
+header .navbar {
+  height: 5dvh;
+  display: flex;
+  justify-content: space-between;
+  background: #222;
+  align-items: center;
+  align-self: baseline;
+  padding: 0 2dvh;
+  position: sticky;
+  color: #fff;
+}
+header .navbar .bx {
+  color: #cc0000;
+}
+header .header-content {
+  height: 100%;
+  max-width: 80dvw;
+  padding: 0.5rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  color: #222;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 17dvh;
+}
+header .header-content .title-1 {
+  padding-left: 1.5rem;
+  font-size: 4.5rem;
+  line-height: 0.5;
+  padding-right: 10rem;
+  font-family: "League Gothic", sans-serif;
+  text-shadow: 1px 2px 4px #fff;
+}
+header .header-content .title-1 .highcase-g {
+  font-size: 1.3em;
+}
+header .header-content div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+header .header-content div .title-2 {
+  text-align: right;
+  align-self: flex-start;
+  font-size: 1.6rem;
+  padding-top: 1rem;
+  font-family: "League Gothic", sans-serif;
+  text-shadow: 0 1px 1px #fff;
+}
+header .header-content div .title-3 {
+  font-size: 2.5rem;
+  font-family: "League Gothic", sans-serif;
+  text-shadow: 1px 1px 0 #fff;
+}
+header .header-content div .title-3 .highcase-h {
+  font-size: 1.1em;
+}
+header .header-content .title-4 {
+  color: #fff;
+  font-size: 1.3rem;
+  font-family: "La Belle Aurore", cursive;
+  text-align: center;
+  text-shadow: 1px 2px 0 #222;
+  height: 70px;
+}
+
+main {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 10px;
+  text-align: center;
+  max-width: 70dvw;
+  margin: auto;
+}
+main .subtitle {
+  font-size: 0.9rem;
+}
+main .main-container .form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 450px;
+  margin: auto;
+}
+main .main-container .form-container .form-input {
+  max-width: 400px;
+  margin-top: 0.3rem;
+}
+main .main-container .form-container .second-question select {
+  display: inline;
+  border: 0;
+  width: auto;
+  margin-left: 10px;
+  outline: none;
+  border-bottom: 2px solid #4a4343;
+  border-top: 2px solid #cc0000;
+  color: #cc0000;
+  transition: all 0.4s ease-in-out;
+  padding: 2px 10px;
+}
+main .main-container .form-container .second-question select:hover {
+  cursor: pointer;
+}
+main .main-container .form-container .second-question select option {
+  border: 0;
+  border-bottom: 1px solid #4a4343;
+  padding: 10px;
+}
+main .main-container .form-container .eleccion-container {
+  margin: 1rem;
+  margin-bottom: 2rem;
+}
+main .main-container .form-container .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+main .main-container .history-container {
+  margin-bottom: 2rem;
+}
+main .main-container .history-container .display {
+  border: 2px solid #cc0000;
+  color: #fff;
+  min-height: 200px;
+  background: #4a4343;
+  margin: 10px;
+  padding: 20px;
+  text-align: left;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  header .header-content .title-1 {
+    font-size: 7.5rem;
+    line-height: 0.5;
+  }
+  header .header-content .title-1 .highcase-g {
+    font-size: 1.3em;
+  }
+  header .header-content div .title-2 {
+    font-size: 2.6rem;
+    padding-top: 2rem;
+  }
+  header .header-content div .title-3 {
+    font-size: 5.5rem;
+  }
+  header .header-content div .title-3 .highcase-h {
+    font-size: 1.1em;
+  }
+  header .header-content .title-4 {
+    font-size: 2.3rem;
+  }
+  main .main-container .form-container {
+    max-width: 100%;
+  }
+  main .main-container .form-container .buttons {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,6 @@
+*.ini
+scss
+*-lock.json
+node_modules
+*.map
+*kage.json
