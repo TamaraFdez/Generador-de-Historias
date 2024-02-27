@@ -95,3 +95,7 @@ function getTextEnd(end, aLocation, name) {
     `;
   }
 }
+
+function reiniciarHistoria() {
+  display.innerText = "";
+}
